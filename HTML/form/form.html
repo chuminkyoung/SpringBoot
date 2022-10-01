@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form : 양식</title>
+</head>
+<body>
+    <!-- 양식 form -->
+    <!-- 입력 태그 input -->
+
+    <!-- 입력받는 형식 -->
+    <!-- type="text, checkbox, radio ..., submit" -->
+    <!-- name="입력한 데이터를 찾기위한 구분값" -->
+    <!-- 
+    <form action="">
+        <input type="text" name="">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+     -->
+
+
+    <!-- 
+        action="제출할 위치"
+            - 양식을 제출할 경로(서버주소)
+
+        target="_self, _blankm, _parent, _top, iframe 이름"
+
+        value="입력값"
+
+        method="get(기본값 - 주소로 노출), post"
+            - 양식 데이터 전송 방식
+            *** post -> 전송 후 개발자도구에서 -> 네트워크 -> 페이로드에서 전송 받은 내용 확인 받을 수 있음 ***
+
+        autocomplete : 자동완성 기능
+     -->
+    <form action="form_action.html" method="post" autocomplete="off">
+        <!-- 한줄 입력 -->
+        이름 :   <input type="text" name="name" value="이름!">
+                <br>
+        취미 :   <input type="checkbox" name="hobby" value="취미1">취미1
+                <input type="checkbox" name="hobby" value="취미2">취미2
+                <input type="checkbox" name="hobby" value="취미3">취미3
+                <br>
+        성별 :   <input type="radio" name="gender" value="여성">여성
+                <input type="radio" name="gender" value="남성">남성
+                <br>
+        이메일 : <input type="email" name="email">
+                <br>
+        차량 :   
+        <select name="car" size="2" multiple> <!-- size : 노출되는 갯수, multiple : 여러개 선택 가능 -->
+            <option value="">차량 없음</option>
+            <option value="액센트">액센트</option>
+            <option value="아반떼" selected>아반떼</option>
+            <option value="소나타">소나타</option>
+        </select>
+        <br>
+        자기소개 : 
+        <textarea name="intro" id="" cols="40" rows="3"></textarea>
+
+        <input type="submit" value="가입하기">
+    </form>
+</body>
+</html>

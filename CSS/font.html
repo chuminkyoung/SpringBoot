@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+        /* em 부모 태그 기준 */
+        /* rem 최상위 태그 기준 */
+
+        html            {font-size: 13px;}
+        
+        span            {font-size: 13px;}
+        .wrap2          {font-size: 30px;}
+        .font1, .font2  {font-size: 3em; /* font1 : 36px, font2 : 90px */}
+
+        .font3          {font-size: 3rem; /* font3 : 36px */ color: rgb(255, 0, 0);}
+        .font4          {font-size: 5rem; /* font4 : 65px */ /* color: #ff0000; */ color: #f00;}
+
+        .lorem          {
+            /* 자간 */
+            /* letter-spacing: 20px; */
+
+            /* 단어사이 간격 */
+            word-spacing: 10px;
+
+            /* 행간 */
+            /* line-height: 2;  ->  2배 */
+            line-height: 26px;
+            font-weight: bold;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .align  {
+            text-align: justify; /* 자동정렬 */
+        }
+    </style>
+
+    <span class="wrap1">
+        <div class="font1">글1</div>
+    </span>
+
+    <span class="wrap2">
+        <div class="font2">글2</div>
+    </span>
+
+    <span class="wrap3">
+        <div class="font3">글2</div>
+    </span>
+
+    <span class="wrap4">
+        <div class="font4">글2</div>
+    </span>
+
+    <p class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis excepturi eaque incidunt doloremque hic, suscipit quasi eligendi sit autem quis magni vero minima iste perferendis cum perspiciatis! Odio, consectetur distinctio?
+    </p>
+
+    <p class="align">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto nisi corporis? Esse aspernatur perferendis, fugiat ex aut incidunt, minima voluptatibus molestias autem architecto sint doloremque enim iure dicta libero.
+    </p>
+</body>
+</html>

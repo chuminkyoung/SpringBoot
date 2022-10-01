@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+</head>
+<body>
+    <!-- 
+        선택자 - 스타일 적용 대상
+        
+        선택자의 우선순위
+            - 선택의 범위가 넓을수록 우선순위가 낮다.
+            - 선택의 범위가 좁을수록 우선순위가 높다.
+            - 태그 < 클래스(class) < 아이디(id) < 스타일 속성값
+
+            공통 - 폰트, 글 색
+
+
+        1. id 속성 -> 한개를 선택
+            #아이디이름
+
+        2. class 속성 -> 여러대상을 선택
+            .클래스이름
+            (마침표)
+
+        3. 태그명(태그 선택자)
+
+
+        선택자 {
+            스타일 속성 : 값; (background: red;)
+            스타일 속성 : 값;
+            ...
+        }
+     -->
+
+     <style>
+        #menu2  {
+            background: yellow;
+        }
+        .menu   {
+            background: red;
+        }
+        li  {
+            background: blue;
+        }
+     </style>
+
+     <ul>
+        <li>메뉴1</li>
+        <li id="menu2">메뉴2</li>
+        <li class="menu">메뉴3</li>
+        <li class="menu">메뉴4</li>
+        <li>메뉴5</li>
+     </ul>
+</body>
+</html>

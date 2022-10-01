@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body    {min-height: 3000px;}
+        #box    {width: 300px; height: 300px; background: red;}
+    </style>
+    <script>
+        window.addEventListener("DOMContentLoaded", function(){
+            const textEl = document.getElementById("button2");
+            textEl.addEventListener("click", function(event){
+                // event - 이벤트가 발생한 요소에 대한 정보, 기능
+                // console.log(event);
+                
+                // 이벤트가 발생한 요소
+                console.log("currentTarget : ", event.currentTarget);
+                // currentTarget -> 이벤트가 바인딩되어 있는 요소
+
+                console.log("target : ", event.target);
+                // target -> 이벤트가 발생한 요소
+
+                // this == event.currentTarget -> 이벤트가 바인딩 되어 있는 요소
+                console.log("this : ", this);
+
+                // console.log("키가 눌렸다 떼어졌다..")
+            });
+
+            const buttonEl = document.getElementById("button");
+            buttonEl.addEventListener("click", function(){
+                console.log("버튼 클릭!");
+            });
+
+            const boxEl = document.getElementById("box");
+            boxEl.addEventListener("mouseenter", function(){
+                console.log("마우스가 들어왔다.");
+            });
+
+            window.addEventListener("scroll", function(){
+                console.log("화면 스크롤");
+            });
+
+            window.addEventListener("resize", function(){
+                console.log("화면 축소, 확대");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="button2"><span>클릭!</span></div>
+
+    <input type="text" id="text" placeholder="글자 입력">
+    <button type="button" id="button">클릭!</button>
+    <div id="box"></div>
+</body>
+</html>
