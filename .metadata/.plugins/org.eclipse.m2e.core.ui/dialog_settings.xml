@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\SpringBootNew\blog"/>
 			<item value="C:\SpringBoot\study\viewex"/>
 			<item value="C:\SpringBoot\study\web01"/>
 			<item value="C:\SpringBoot\dbex01"/>

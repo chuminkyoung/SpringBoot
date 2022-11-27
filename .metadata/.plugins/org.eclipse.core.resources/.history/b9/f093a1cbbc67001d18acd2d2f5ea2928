@@ -1,8 +1,0 @@
-package controllers.members;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-public class InfoController {
-	
-}

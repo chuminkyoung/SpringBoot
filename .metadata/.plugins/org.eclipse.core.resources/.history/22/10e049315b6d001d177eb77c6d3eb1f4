@@ -1,6 +1,0 @@
-package controllers.files;
-
-@RestController
-public class DownloadController {
-
-}

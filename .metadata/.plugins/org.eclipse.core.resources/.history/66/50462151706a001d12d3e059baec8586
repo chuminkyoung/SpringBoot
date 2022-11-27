@@ -1,5 +1,0 @@
-package models.file;
-
-public class FileInfoDao {
-
-}
