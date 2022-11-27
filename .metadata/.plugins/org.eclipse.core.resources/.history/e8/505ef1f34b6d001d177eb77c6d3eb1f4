@@ -1,0 +1,17 @@
+window.addEventListener("DOMContentLoaded", function(){
+	const dropBoxEl = document.getElementById("drop_box");
+	if(dropBoxEl){
+		dropBoxEl.addEventListener("dragover", function(e){
+			e.preventDefault();
+			
+		});
+		
+		dropBoxEl.addEventListener("drop", function(e){
+			e.preventDefault();
+			const files = e.datgaTransfer.files;
+			console.log(files);
+		});
+	}
+	
+	const fileEl = document.getElementById("file"');
+});

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/popup}">
+	
+	<main layout:fragment="content">
+		<input type="hidden" id="gid" name="gid" th:value="${gid}">
+		<div id="file_upload">
+			<div id="drop_box">
+				<div class="guide">업로드할 파일을 끌어 오세요!</div>
+			</div>
+			<div>
+				<input type="file" id="file" multiple>
+			</div>
+			
+			<ul id="uploaded_files"></ul>
+			
+			<script type="text/html" id="tpl">
+				<li>
+					<a href="../file/download/#[id]>
+						#[fileName]
+					</a>
+					<span class="remove">[X]</span>
+				</li>
+			</script>
+		</div>
+	</main>
+</html>

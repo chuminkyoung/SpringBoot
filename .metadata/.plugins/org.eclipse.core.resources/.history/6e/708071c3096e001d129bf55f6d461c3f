@@ -1,0 +1,10 @@
+package org.koreait.controller;
+
+@Controller
+public class MainController {
+	@GetMapping("/")
+	public String mainPage() {
+		
+		return "main/index";
+	}
+}

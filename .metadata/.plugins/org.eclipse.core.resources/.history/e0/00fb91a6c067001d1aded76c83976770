@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.na/thymeleaf/layout"
+	layout:decorate="~{layouts/mainn}">
+<main layout:fragment="content">
+	<th:block th:object="${member}">
+	<dl>
+		<dt th:text="#{member.memId}"></dt>
+		<dd th:text="*{memId}"></dd>
+	</dl>
+	<dl>
+		<dt th:text="#{member.memNm}"></dt>
+		<dd th:text=*{memNm}">
+	</dl>
+</main>
+</html>

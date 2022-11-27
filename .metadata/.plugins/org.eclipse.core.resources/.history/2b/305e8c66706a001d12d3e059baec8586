@@ -1,0 +1,11 @@
+package models.file;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
+
+@Component
+public class FileInfoDao {
+	
+	
+	private JdbcTemplate jdbcTemplate;
+}

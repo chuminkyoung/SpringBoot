@@ -1,0 +1,11 @@
+package org.koreait.controllers;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MainController {
+	public String mainPage() {
+		
+		return "main/index";
+	}
+}

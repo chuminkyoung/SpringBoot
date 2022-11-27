@@ -1,0 +1,7 @@
+package controllers.files;
+
+@Controller
+@RequestMapping("/file/upload")
+public class UploadController {
+	
+}

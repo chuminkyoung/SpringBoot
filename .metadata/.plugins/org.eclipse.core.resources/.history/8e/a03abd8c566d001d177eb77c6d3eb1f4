@@ -1,0 +1,12 @@
+package services.file;
+
+import org.springframework.stereotype.Service;
+
+import models.file.FileInfo;
+
+@Service
+public class FileDeleteService {
+	public FileInfo process(long id) {
+		
+	}
+}

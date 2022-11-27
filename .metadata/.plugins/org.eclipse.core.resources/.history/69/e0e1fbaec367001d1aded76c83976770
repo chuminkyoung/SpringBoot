@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorates="~{layouts/main}">
+	<main layout:fragment="content">
+		<form method="get">
+			가입일
+			<input type="text" name="sdate">
+			~
+			<input type="text" name="edate">
+			<button type="submit">조회하기</button>
+		</form>
+	</main>
+</html>

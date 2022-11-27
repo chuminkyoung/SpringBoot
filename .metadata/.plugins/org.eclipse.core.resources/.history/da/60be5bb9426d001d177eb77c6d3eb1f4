@@ -1,0 +1,41 @@
+package services.file;
+
+import java.util.List;
+import models.file.FileInfo;
+import models.file.FileInfoDao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+
+@Service
+public class FileUploadService {
+	
+	@Autowired
+	private FileInfoDao fileInfoDao;
+	
+	public List<FileInfo> process(MultipartFile[] file) {
+		String gid = "" + System.currentTimeMillis();
+		return process(file, gid);
+	}
+	
+	public List<FileInfo> process(MultipartFile[] files, String gid) {
+		/**
+		 * 1. 파일 정보 DB에 저장
+		 * 2. 파일 정보 데이터 id -> 서버 업로드 파일 경로
+		 * 3. 파일 업로드
+		 * 4. 업로드한 파일 정보 반환
+		 */
+		
+		gid = (gid == null || gid.isBlank()) ? "" + System.currentTimeMillis() : gid;
+		
+		for (MultipartFile file : files) {
+			FileInfo fileInfo = new FileInfo();
+			fileInfo.setGid(gid);
+			fileInfo.setFileName(file.getOriginalFilename()); // 업로드 파일 원본 이름 - 다운로드시 활용
+			fileInfo.setFileType(file.getContentType()); // image/png, image/gif...
+			
+			fileInfo = fileInfoDao.register(fileInfo);
+		}
+	}
+}

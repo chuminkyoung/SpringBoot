@@ -1,0 +1,4 @@
+db.driver-class-name=com.mysql
+db.database=springStudy
+db.username=root
+db.password=aA!123456

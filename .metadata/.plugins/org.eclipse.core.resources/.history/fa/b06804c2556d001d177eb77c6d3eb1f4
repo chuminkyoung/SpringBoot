@@ -1,0 +1,10 @@
+package controllers.files;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DeleteController {
+	public JsonResult<FileInfo> delete(long id) {
+		
+	}
+}

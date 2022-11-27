@@ -1,0 +1,5 @@
+package commons.auth;
+
+public class MemberOnlyinterceptor implements HandlerInterceptor {
+
+}

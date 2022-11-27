@@ -1,0 +1,12 @@
+package controllers.files;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DownloadController {
+	
+	@GetMapping("/file/download/{id}")
+	public void download(long id) {
+		
+	}
+}

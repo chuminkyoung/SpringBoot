@@ -1,0 +1,1 @@
+#drop_box{border: 3px dashed #444; height: 150px; text-align: center; display: flex; align-items: center; justify-content: center;}

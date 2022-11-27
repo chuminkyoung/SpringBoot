@@ -1,0 +1,12 @@
+package models.file;
+
+import java.time.LocalDateTime;
+
+public class FileInfo {
+	private long id;
+	private String gid;
+	private String fileName;
+	private String fileType;
+	private boolean success;
+	private LocalDateTime regDt;
+}

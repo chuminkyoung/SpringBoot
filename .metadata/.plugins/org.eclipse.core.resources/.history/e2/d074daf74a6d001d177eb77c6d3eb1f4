@@ -1,0 +1,6 @@
+window.addEventListener("DOMContentLoaded", function(){
+	const dropBoxEl = document.getElementById("drop_box");
+	if(dropBoxEl){
+		
+	}
+});

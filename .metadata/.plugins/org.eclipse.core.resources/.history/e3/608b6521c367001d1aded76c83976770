@@ -1,0 +1,10 @@
+package controllers.members;
+
+import java.time.LocalDate;
+
+public class SearchRequest {
+	private LocalDate sdate;
+	private LocalDate edate;
+	
+	
+}

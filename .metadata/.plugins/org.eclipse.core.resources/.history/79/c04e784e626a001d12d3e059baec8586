@@ -1,0 +1,6 @@
+package commons.rest;
+
+public class JsonResult<T> {
+	private boolean success;
+	private T data;
+}

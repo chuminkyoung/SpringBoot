@@ -1,0 +1,9 @@
+package controllers.files;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+@RequestMapping("/file/upload")
+public class UploadController {
+
+}

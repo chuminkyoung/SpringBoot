@@ -1,0 +1,26 @@
+const fileUpload = {
+	
+}
+
+window.addEventListener("DOMContentLoaded", function(){
+	const dropBoxEl = document.getElementById("drop_box");
+	if(dropBoxEl){
+		dropBoxEl.addEventListener("dragover", function(e){
+			e.preventDefault();
+			
+		});
+		
+		dropBoxEl.addEventListener("drop", function(e){
+			e.preventDefault();
+			const files = e.dataTransfer.files;
+			console.log(files);
+		});
+	}
+	
+	const fileEl = document.getElementById("file");
+	if(fileEl){
+		fileEl.addEventListener("change", function(e){
+			const files = e.target.files;
+		})
+	}
+});

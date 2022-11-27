@@ -1,0 +1,17 @@
+package controllers.members;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+@Controller
+public class InfoController {
+	
+	private MemberDao memberDao;
+	
+	@GetMapping("/member/{id}")	// /member/user01, /member/user02
+	public String memberInfo(@PathVariable String id) {
+		System.out.println("id : " + id);
+		return "member/info";
+	}
+}

@@ -1,0 +1,12 @@
+window.addEventListener("DOMContentLoaded", function(){
+	const dropBoxEl = document.getElementById("drop_box");
+	if(dropBoxEl){
+		dropBoxEl.addEbentListener("dragover", function(e){
+			
+		});
+		
+		dropBoxEl.addEventListener("drop", function(e){
+			
+		})
+	}
+});

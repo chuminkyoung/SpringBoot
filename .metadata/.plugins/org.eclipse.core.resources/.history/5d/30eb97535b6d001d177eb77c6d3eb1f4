@@ -1,0 +1,11 @@
+package controllers.files;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DownloadController {
+	
+	public void download(long id) {
+		
+	}
+}
