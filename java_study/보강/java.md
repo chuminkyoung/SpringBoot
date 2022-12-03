@@ -58,3 +58,43 @@ super() : 상위 클래스의 생성자 메서드
 
 객체 instanceof 클래스 자료형
 클래스 자료형으로 생성된 객체인지 확인
+
+
+
+# 상속
+추상클래스
+
+추상적 <--> 구체적
+(정해지지않은)
+- 공통적인
+
+class 클래스명{
+    변수
+
+    메서드: 구체적
+}
+
+int add(num1, num2){
+    int result = num1 + num2;
+
+    return result;
+}
+
+add(10, 20);
+
+메서드의 구현 부분이 정해지지 않은 클래스
+
+    - abstract class
+        public abstract ...
+
+    - 미 구현된 메서드 -> 객체 생성 x
+
+
+
+# 인터페이스(interface): 클래스의 일종
+- 설계에 초점을 두고 만든 클래스의 일종
+- 추상 메서드 정의만 염두해 두고 만든 클래스의 일종
+
+int add(int num1, int num2);    // 컴페일러가 당연히 추상 메서드로 인식. public abstract
+
+implements: 구현에 초점을 맞춤
