@@ -1,8 +1,0 @@
-package models.file;
-
-public class FileInfo {
-	private long id;
-	private String gid;
-	private String fileName;
-	pravate Stgring fileType;
-}

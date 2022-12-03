@@ -1,9 +1,0 @@
-package controllers.files;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-
-public class UploadController {
-
-}

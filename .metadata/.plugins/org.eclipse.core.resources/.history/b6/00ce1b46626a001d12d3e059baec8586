@@ -1,5 +1,0 @@
-package commons.rest;
-
-public class JsonResult {
-	private boolean success;
-}
