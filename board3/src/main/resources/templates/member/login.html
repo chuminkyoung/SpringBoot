@@ -6,6 +6,7 @@
 	<body>
 		<h1>로그인</h1>
 		<form method="post" th:action="@{/member/login}" th:object="${loginRequest}" autocomplete="off">
+			<div class="errors" th:each="err:${#fields.globalErrors()}" th:text="${err}"></div>
 			<dl>
 				<dt>아이디</dt>
 				<dd>

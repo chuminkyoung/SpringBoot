@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<body>
+		<th:block th:if="${session.member == null}"> <!-- 로그인 하지 않은 경우 -->
+			<a th:href="@{/member/join}" th:text="회원가입"></a>
+			<a th:href="@{/member/login}" th:text="로그인"></a>
+		</th:block>
+		<th:block th:unless="${session.member == null}"> <!-- 로그인 한 경우 -->
+			<span th:text="${session.member.memNm + '(' + session.member.memId + ')님 로그인'}"></span>
+			<a th:href="@{/member/logout}" th:text="로그아웃"></a>
+		</th:block>
+		
+		<div th:text="${commonData}"></div>
+	</body>
+</html>
